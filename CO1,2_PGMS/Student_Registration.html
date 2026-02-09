@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body{
+      background-color:lightgreen;
+      }
+      h1{
+      text-align:center;
+      color:red;
+      font-family:sans-serif;
+      }
+    form{
+      width:300px;
+      background-color:yellow;
+      margin:auto;
+      color:black;
+      padding:50px;
+      border:2px solid black;
+      }
+      input{
+      width:90%;
+      margin:auto;
+      padding:5px;
+      border:1px solid black;
+      border-radius:10px;
+      }
+      
+  
+    </style>
+    <title>FORMS</title>
+  </head>
+  <body>
+    <H1>Student Registration Validation</h1>
+    <form>
+      <label>Name</label><br>
+      <input type="text" name="name" placeholder="enter your name" required><br>
+        <label>Email</label><br>
+        <input type="email" name="email" placeholder="enter your email" required><br>
+          <label>Mobile Number</label><br>
+          <input type="text" name="phone" placeholder="enter your number" required pattern=[0-9]{10}><br>
+            <label>Passowrd</label><br>
+            <input type="password" name="password" placeholder="enter your password" required minlength=".{8,}"><br>
+              <label>conform password</label><br>
+              <input type="password" name="password" placeholder="confirm password" required minlength=".{8,}"><br><br>
+                <button>submit</button>
+                </form>
