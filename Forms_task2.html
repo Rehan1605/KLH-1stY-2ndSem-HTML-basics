@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #8fd3f4;
+        }
+    </style>
+</head>
+
+<body> 
+
+    <h1>Student Registration Form</h1>
+
+    <form> 
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="mname">Middle name:</label><br>
+        <input type="text" id="mname" name="mname"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="contact">Phone Number:</label><br>
+        <input type="text" value="+91" size="3" readonly>
+        <input type="text" id="contact" name="contact"><br><br>
+
+        <h3>Gender</h3>
+        <input type="radio" name="gender"> Male<br>
+        <input type="radio" name="gender"> Female<br>
+        <input type="radio" name="gender"> Other<br><br>
+
+        <h3>Hobbies</h3>
+        <input type="checkbox"> Cricket<br>
+        <input type="checkbox"> Chess<br>
+        <input type="checkbox"> Football<br>
+        <input type="checkbox"> Dance<br><br>
+
+        <label>Communication Address:</label><br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <label>Course:</label><br>
+        <select>
+            <option>Select</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>CSIT</option>
+            <option>AI & DS</option>
+        </select><br><br>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+
+</body>
+</html>
