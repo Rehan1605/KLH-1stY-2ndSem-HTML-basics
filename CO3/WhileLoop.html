@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="blabla"></div>
+
+    <script>
+      function myFunction() {
+        var x = "",
+            i = 0;
+
+        while (i < 5) {
+          x = x + "The number is " + i + "<br>";
+          i++;
+        }
+
+        document.getElementById("blabla").innerHTML = x;
+      }
+
+      myFunction();
+    </script>
+  </body>
+</html>
