@@ -1,0 +1,44 @@
+<html>
+<body>
+<h3>Change Event Example</h3>
+<!-- Text Input -->
+Name: <input type="text" id="name"><br><br>
+
+<!-- Select Dropdown -->
+Course:
+<select id="course">
+  <option value="">Select</option>
+  <option value="CSE">CSE</option>
+  <option value="ECE">ECE</option>
+</select><br><br>
+<input type="checkbox" id="agree"> I Agree<br><br>
+
+<p id="output"></p>
+
+<script>
+let nameInput = document.getElementById("name");
+let courseSelect = document.getElementById("course");
+let checkbox = document.getElementById("agree");
+let output = document.getElementById("output");
+
+// Text input change
+nameInput.addEventListener("change", function() {
+   output.textContent = "Name entered: " + nameInput.value;
+});
+
+// Select change
+courseSelect.addEventListener("change", function() {
+   output.textContent = "Selected course: " + courseSelect.value;
+});
+
+// Checkbox change
+checkbox.addEventListener("change", function() {
+   if (checkbox.checked) {
+      output.textContent = "You agreed!";
+   } else {
+      output.textContent = "You did not agree.";
+   }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+<h2 id="title">Welcome Students</h2>
+<p class="message">This is DOM Manipulation</p>
+<button id="btn">Click Me</button>
+<script>
+// Select using getElementById
+let button = document.getElementById("btn");
+// Add event
+button.addEventListener("click", function() {
+   // Select using querySelector
+   let heading = document.querySelector("#title");
+   let para = document.querySelector(".message");
+// Change text
+   heading.textContent = "Title Changed!";
+   // Change HTML
+   para.innerHTML = "<b>Content Updated Successfully!</b>";
+   // Change style
+   heading.style.color = "red";
+   para.style.fontSize = "20px";
+});
+</script>
+</body>
+</html>

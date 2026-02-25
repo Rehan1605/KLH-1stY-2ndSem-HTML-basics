@@ -1,0 +1,17 @@
+<html>
+<body>
+<form id="myForm">
+  Name: <input type="text" id="username">
+  <button type="submit">Submit</button>
+</form>
+<p id="message"></p>
+<script>
+let form = document.getElementById("myForm");
+form.addEventListener("submit", function(event) {
+   event.preventDefault(); // Prevent page refresh
+   let name = document.getElementById("username").value;
+   document.getElementById("message").textContent = "Welcome " + name;
+});
+</script>
+</body>
+</html>
